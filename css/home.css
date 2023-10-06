@@ -162,7 +162,7 @@ nav {
 }
 
 .testimonial,
-.blog {
+.blog-sect {
   padding: 3rem 4rem;
   display: flex;
   flex-direction: column;
@@ -176,7 +176,7 @@ nav {
   align-self: flex-end;
   padding: 1rem 0;
 }
-.clients {
+.clients,.blogs {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -188,6 +188,7 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  font-family: "Poppins", sans-serif;
   align-items: center;
   /* gap: 0.5rem; */
   /* height: 10rem; */
@@ -195,7 +196,7 @@ nav {
   background-color: #fff;
   border: none;
   border-radius: 8px;
-  padding: 1.3rem;
+  padding: 1rem;
   font-size: 0.9rem;
   color: rgb(77, 76, 76);
   box-shadow: 1px 1px 11px rgba(238, 238, 238, 0.884);
@@ -203,15 +204,50 @@ nav {
 .client p {
   line-height: 1.3rem;
 }
+.client-role {
+  font-size: 0.8rem;
+  color: gray;
+}
 .client-id {
   display: flex;
   flex-direction: row;
   gap: 1rem;
-  align-items: center;
+  /* align-items: center; */
+  align-self: flex-start;
   padding: 0.8rem 0;
 }
 .client-header {
   padding: 1rem 0;
+}
+.client-img {
+  width: 35px;
+  height: 35px;
+  border: none;
+  border-radius: 100%;
+}
+.blog {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: "Poppins", sans-serif;
+  /* width: 100%; */
+  background-color: #fff;
+  padding:0;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  color: rgb(77, 76, 76);
+  box-shadow: 1px 1px 11px rgba(238, 238, 238, 0.884);
+}
+.blogs{
+  padding:2rem 0;
+}
+.blog-img {
+  width: 100%;
+  /* height:100px; */
+}
+.blog-deets{
+  padding: 1rem;
 }
 .promo {
   background-color: #3fa34d;
@@ -225,7 +261,8 @@ nav {
   color: #fff;
 }
 .promo-header,
-.client-header, .blog-header {
+.client-header,
+.blog-header {
   display: flex;
   width: 60%;
   flex-direction: column;
@@ -233,7 +270,8 @@ nav {
   text-align: center;
 }
 .promo-header h2,
-.client-header h2 , .blog-{
+.client-header h2,
+.blog-header h2 {
   font-size: 2rem;
 }
 .promo .promo-btn {
