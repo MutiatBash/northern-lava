@@ -20,8 +20,9 @@ a {
 h1,
 h2,
 h3,
-h4
- {
+h4,
+h5,
+h6 {
   font-family: "Lora", sans-serif;
 }
 p,
@@ -119,31 +120,65 @@ nav {
 .mis-vis {
   background-color: #f7fdf8;
 }
-.team-sect,
-.mis-vis {
+.blog {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: "Poppins", sans-serif;
+  /* width: 100%; */
+  background-color: #fff;
+  padding: 0;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  color: rgb(77, 76, 76);
+  box-shadow: 1px 1px 11px rgba(238, 238, 238, 0.884);
+}
+.blogs {
+  padding: 2rem 0;
+}
+.blog-img {
+  width: 100%;
+  /* height:100px; */
+}
+.blog-deets {
+  padding: 1rem;
+}
+
+.courses-sect,
+.blog-sect {
   padding: 3rem 4rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: 2rem;
 }
-.team-sect{
-  align-items: center;
+.course-header h2,
+.team-header h2 {
+  font-size: 2rem;
 }
-.mission {
+.course-header,
+.blog-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  text-align: center;
+}
+.courses,.blogs {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  column-gap: 4rem;
+  gap: 2rem;
+  padding: 1rem 0;
 }
-.mission-header h2,
-.team-header h2 {
-  font-size: 2rem;
-}
-.mission-card {
+.course {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
   background-color: #fff;
-  width:45%;
   border: none;
   border-radius: 8px;
   padding: 1.3rem;
@@ -151,72 +186,8 @@ nav {
   color: rgb(77, 76, 76);
   box-shadow: 1px 1px 11px rgba(238, 238, 238, 0.884);
 }
-.quote {
-  color: #3fa34d;
-  font-size: 3rem;
-  font-family: "Lora", sans-serif;
-  align-self: flex-end;
-  padding: 1rem 0;
-}
-.teams {
-  display: flex;
-  flex-wrap:wrap;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  column-gap: 4rem;
-  row-gap: 4rem;
-  padding: 1rem 0;
-}
-.team {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-}
-.team p {
+.course p {
   line-height: 1.3rem;
-}
-.team-id {
-  font-size: 0.7rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.2rem;
-  align-items: center;
-  padding: 0.8rem 0;
-}
-.team-img{
-  width:200px;
-  height:200px;
-  border:none;
-  border-radius:100%;
-}
-.team-id h5{
-font-size:1rem;
-font-family: "Poppins", sans-serif;
-font-weight:500;
-}
-.team-header {
-  padding: 1rem 0;
-}
-.promo {
-  background-color: #3fa34d;
-  padding: 3rem 8rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  gap: 2rem;
-  text-align: center;
-  color: #fff;
-}
-.team-header,
-.blog-header {
-  display: flex;
-  width: 60%;
-  flex-direction: column;
-  gap: 0.5rem;
-  text-align: center;
 }
 .promo .promo-btn {
   color: #3fa34d;
