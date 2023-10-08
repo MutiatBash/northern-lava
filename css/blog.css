@@ -19,15 +19,14 @@ a {
 }
 h1,
 h2,
-h3,
-h4,
-h5,
-h6 {
+h3 {
   font-family: "Lora", sans-serif;
 }
 p,
 li,
-button {
+button,
+a,
+h4 {
   font-family: "Poppins", sans-serif;
   line-height: 1.5rem;
 }
@@ -62,6 +61,14 @@ nav {
   color: #3fa34d;
   /* font-weight:600; */
 }
+button {
+  font-weight: normal;
+  transition: font-weight 0.2s ease;
+}
+.nav-links a.active {
+  color: #3fa34d;
+  /* font-weight:600; */
+}
 .nav-btn,
 .promo-btn {
   width: 12%;
@@ -70,10 +77,16 @@ nav {
   color: white;
   border: none;
   border-radius: 5px;
+  cursor: pointer;
   padding: 0.75rem;
+  transition: background-color 0.3s ease;
+}
+button:hover {
+  background-color: #2a9134;
+  font-weight: 500;
 }
 .main-cont {
-  margin-top: 5rem;
+  margin-top: 4.8rem;
   /* padding: 0 1rem; */
 }
 .hero,
@@ -86,15 +99,14 @@ nav {
   align-items: center;
   column-gap: 4rem;
 }
+.hero {
+  padding-bottom: 0;
+  padding-right: 0;
+  padding-top: 2rem;
+}
 .hero-header {
   font-size: 1.8rem;
   font-family: "Lora", serif;
-}
-.small-about {
-  font-size: 1.3rem;
-  color: #2a9134;
-  padding: 0.3rem 0;
-  font-weight: 600;
 }
 .about-text,
 .hero-text {
@@ -102,12 +114,7 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 2rem;
-}
-.about-img {
-  width: 60%;
-  height: 250px;
-  background-color: green;
+  gap: 0.8rem;
 }
 .hero-btn {
   background-color: #2a9134;
@@ -117,7 +124,11 @@ nav {
   padding: 0.86rem;
   align-self: flex-start;
 }
-.mis-vis {
+.hero-small-about {
+  color: #3fa34d;
+  font-weight: 600;
+}
+.hero {
   background-color: #f7fdf8;
 }
 .blog {
@@ -125,7 +136,7 @@ nav {
   flex-direction: column;
   justify-content: space-between;
   font-family: "Poppins", sans-serif;
-  /* width: 100%; */
+  width: 100%;
   background-color: #fff;
   padding: 0;
   border: none;
@@ -139,13 +150,16 @@ nav {
 }
 .blog-img {
   width: 100%;
-  /* height:100px; */
 }
 .blog-deets {
   padding: 1rem;
 }
-
-.courses-sect,
+.blog-deets h4 {
+  font-weight: 600;
+}
+.blog-deets p {
+  font-size: 0.79rem;
+}
 .blog-sect {
   padding: 3rem 4rem;
   display: flex;
@@ -153,18 +167,16 @@ nav {
   justify-content: space-between;
   gap: 2rem;
 }
-.course-header h2,
 .team-header h2 {
   font-size: 2rem;
 }
-.course-header,
 .blog-header {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  text-align: center;
 }
-.courses,.blogs {
+
+.blogs {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -172,34 +184,65 @@ nav {
   gap: 2rem;
   padding: 1rem 0;
 }
-.course {
+.promo {
+  background-color: #3fa34d;
+  padding: 3rem 8rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
-  background-color: #fff;
-  border: none;
-  border-radius: 8px;
-  padding: 1.3rem;
-  font-size: 0.9rem;
-  color: rgb(77, 76, 76);
-  box-shadow: 1px 1px 11px rgba(238, 238, 238, 0.884);
+  gap: 2rem;
+  text-align: center;
+  color: #fff;
 }
-.course p {
-  line-height: 1.3rem;
+.promo-header {
+  display: flex;
+  width: 60%;
+  flex-direction: column;
+  gap: 0.5rem;
+  text-align: center;
+}
+.promo-header h2 {
+  font-size: 2rem;
 }
 .promo .promo-btn {
   color: #3fa34d;
   background-color: white;
-  width: 12%;
+  width: 20%;
+  box-shadow: 1px 1px 11px rgba(99, 95, 95, 0.11);
+  /* border-radius: 0 6px 6px 0; */
   font-weight: 600;
+}
+.subscribe-form {
+  display: flex;
+  background-color: rgba(250, 249, 249, 0.904);
+  flex-direction: row;
+  justify-content: center;
+  /* gap:0.3rem; */
+  border-radius: 6px;
+  border: none;
+  align-items: center;
+  width: 60%;
+}
+.subscribe-form input {
+  padding: 1rem;
+  /* color:#fff; */
+  border: none;
+  width: 80%;
+  border-radius: 6px 0 0 6px;
+  background-color: rgba(250, 249, 249, 0.904);
+}
+.subscribe-form input:focus {
+  /* border:0.5px solid rgb(211, 210, 210); */
+  outline-color: rgba(143, 143, 143, 0.87);
 }
 .footer {
   color: white;
-  background-color: #03301a;
+  /* background-color: #03301a; */
+  background-color: #1d1d1d;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   /* justify-content: space-between; */
 }
 .footer-sect {

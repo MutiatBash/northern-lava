@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
     <link rel="stylesheet" href="./css/home.css" />
     <title>Northen Lava</title>
   </head>
@@ -10,7 +14,7 @@
     <nav>
       <p>Northern Lava</p>
       <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html" class="active">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="shop.html">Shop</a></li>
         <li><a href="blog.html">Blog</a></li>
@@ -35,7 +39,7 @@
             students of all abilities broaden their horizons with fresh
             knowledge.
           </p>
-          <button class="hero-btn">Explore courses ➡</button>
+          <button class="hero-btn">Explore courses  <i class="fa-solid fa-arrow-right-long"></i></button>
         </div>
 
         <div class="hero-img"><img src="./images/innovative.png" /></div>
@@ -43,7 +47,7 @@
 
       <!-- ABOUT SECTION -->
       <section class="about" id="about">
-        <div class="about-img"></div>
+        <div class="about-img"><img src="./images/about.PNG" /></div>
         <div class="about-text">
           <div>
             <p class="small-about">ABOUT US</p>
@@ -62,7 +66,7 @@
             their dreams, we change lives. If you want to enhance your
             knowledge, we're here to help.
           </p>
-          <a href="about.html">Learn More</a>
+          <a href="about.html" class="about-link">Learn More</a>
         </div>
       </section>
 
@@ -71,32 +75,43 @@
         <div class="about-text">
           <div>
             <h2 class="value-header">Our Values</h2>
-            <div class="line"></div>
           </div>
-
-          <p>Our core values that define us:</p>
+          <p>Our core values that define us</p>
         </div>
         <div class="values-grid">
           <ul class="values-list">
             <li>
+              <div class="value-icon">
+                <i class="fa-solid fa-lightbulb"></i>
+              </div>
               <h3>Innovation</h3>
               We embrace creatvity and continously seek new ways to advance the
               field of education
             </li>
             <li>
+              <div class="value-icon">
+                <i class="fa-solid fa-award"></i>
+              </div>
               <h3>Excellence</h3>
               We strive for the highest standards of quality and effectiveness
-              in all we do
+              in all we do and provide exceptional educational solutions.
             </li>
             <li>
+              <div class="value-icon">
+                <i class="fa-solid fa-user-group"></i>
+              </div>
               <h3>Diversity & Inclusion</h3>
               We celebrate diversity in all its forms and create an inclusive
               learning environment that respects and values every individual
             </li>
             <li>
-              <h3>Diversity & Inclusion</h3>
-              We celebrate diversity in all its forms and create an inclusive
-              learning environment that respects and values every individual
+              <div class="value-icon">
+                <i class="fa-solid fa-atom"></i>
+              </div>
+              <h3>Research-Driven</h3>
+              Our approach is rooted in research and evidence-based practices.
+              We uphold the highest ethical standards in all our interactions
+              and practices
             </li>
           </ul>
         </div>
@@ -106,7 +121,6 @@
       <section class="testimonial" id="testimonial">
         <div class="client-header">
           <h2>What Customers Say</h2>
-          <div></div>
           <p>Hear from our loyal customers</p>
         </div>
         <div class="clients">
@@ -175,28 +189,36 @@
       <section class="blog-sect" id="blog-sect">
         <div class="blog-header">
           <h2>Our Latest Blogposts</h2>
-          <div></div>
           <p>Read up on our latest blogs</p>
         </div>
         <div class="blogs">
           <div class="blog">
             <img src="./images/blog1.JPG" class="blog-img" />
             <div class="blog-deets">
-              <h4>Introducing new learning stategies</h4>
+              <h4>
+                The Science of Learning: Uncovering the secrets to effective
+                study
+              </h4>
               <p>3 min</p>
             </div>
           </div>
           <div class="blog">
             <img src="./images/blog2.JPG" class="blog-img" />
             <div class="blog-deets">
-              <h4>Introducing new learning stategies</h4>
-              <p>3 min</p>
+              <h4>
+                Augmented Reality(AR) in Education: Inspiring the next
+                generation of innovators
+              </h4>
+              <p>5 min</p>
             </div>
           </div>
           <div class="blog">
             <img src="./images/blog3.JPG" class="blog-img" />
             <div class="blog-deets">
-              <h4>Introducing new learning stategies</h4>
+              <h4>
+                Overcoming Distance: Virtual collaboration in online learning
+                space
+              </h4>
               <p>3 min</p>
             </div>
           </div>
